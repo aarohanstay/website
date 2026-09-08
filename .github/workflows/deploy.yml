@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "npm"
+          # cache: "npm"
 
       - name: Remove lock file and regenerate for Linux
         run: rm -f package-lock.json && npm install --platform=linux --arch=x64
