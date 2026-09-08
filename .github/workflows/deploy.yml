@@ -22,7 +22,7 @@ jobs:
           cache: "npm"
 
       - name: Remove lock file and regenerate for Linux
-        run: rm -f package-lock.json && npm install --platform=linux --arch=x64
+        run: npm install --platform=linux --arch=x64
 
       - name: Install Dependencies
         run: npm ci
