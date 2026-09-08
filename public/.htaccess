@@ -1,0 +1,52 @@
+# Static hosting rules for the Next.js export (Hostinger / Apache).
+
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Prevent mod_dir 301 redirects on route directories
+  DirectorySlash Off
+
+  # Root -> index.html
+  RewriteRule ^$ /index.html [L]
+
+  # Serve real root files (like index.html, .htaccess) as-is.
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # Serve real files from src directory (e.g. /src/_next/...).
+  RewriteCond %{DOCUMENT_ROOT}/src/$1 -f
+  RewriteRule ^(.+)$ /src/$1 [L]
+
+  # Map extensionless routes to /src/$1.html if it exists.
+  RewriteCond %{DOCUMENT_ROOT}/src/$1.html -f
+  RewriteRule ^(.+?)/?$ /src/$1.html [L]
+</IfModule>
+
+# Genuine 404 status for unknown paths, rendered with the exported 404 page in src.
+ErrorDocument 404 /src/404.html
+
+# Long-cache immutable build assets.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  <FilesMatch "\.(js|css|woff2|png|jpg|jpeg|svg|webp|ico)$">
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  # Never cache HTML shells so redeploys are picked up immediately.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# Compress text responses.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain application/javascript text/javascript application/json
+</IfModule>
