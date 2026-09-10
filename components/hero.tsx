@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Star, Mountain, Flame, CheckCircle2, ShieldCheck } from "lucide-react";
+import { Star, Mountain, Waves, CheckCircle2, ShieldCheck } from "lucide-react";
 import { HOTEL_INFO, ROOMS } from "@/lib/hotel-data";
 import { CustomDatePicker } from "./custom-date-picker";
 import { CustomRoomSelect } from "./custom-room-select";
@@ -11,12 +11,10 @@ import { AITypingSubtitle } from "./ai-typing-subtitle";
 
 // Animated Background Images Sequence featuring Authentic Chhoie Waterfall Tirthan Valley Scenery
 const HERO_BACKGROUNDS = [
-  "/photos_videos/chhoie_waterfall.jpg", // 1st: Authentic Chhoie Waterfall Tirthan Valley (8K Pine Forest Cascade)
-  "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=85", // 2nd: Majestic Himalayan Hill Peak & Mountain Valley
-  "/photos_videos/chhoie_waterfall_stream.jpg", // 3rd: Chhoie Waterfall River Stream & Rhododendron Trail
-  "/photos_videos/photo_01.jpg", // 4th: Resort Himalayan Wooden Architecture
-  "/photos_videos/photo_07.jpg", // 5th: Wooden Balcony River & Mountain View
-  "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=2000&q=85", // 6th: Panoramic Green Himalayan Slopes
+  "/slides/slide1.jpg", // 1st: Authentic Chhoie Waterfall Tirthan Valley
+  "/slides/slide2.jpg", // 2nd: Majestic Himalayan Hill Peak & Mountain Valley
+  "/slides/slide3.jpg", // 3rd: Chhoie Waterfall River Stream & Rhododendron Trail
+  "/slides/slide4.jpg", // 4th: Resort Himalayan Wooden Architecture
 ];
 
 export function Hero() {
@@ -67,7 +65,7 @@ export function Hero() {
           {/* Main 7XL High-Contrast Typography */}
           <h1 className="relative text-3xl sm:text-5xl lg:text-7xl font-serif tracking-tight leading-tight select-none">
             <span className="font-light italic pr-2 sm:pr-4 text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-300 drop-shadow-[0_4px_16px_rgba(245,158,11,0.4)]">
-              Flowing Waters,
+              Flowing Water,
             </span>
             <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-slate-300 drop-shadow-[0_4px_20px_rgba(255,255,255,0.5)]">
               Himalayan Haven
@@ -131,20 +129,20 @@ export function Hero() {
         {/* Feature Highlights Footer */}
         <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-slate-300 text-xs font-medium drop-shadow-md">
           <div className="flex items-center justify-center gap-2">
-            <Flame className="w-4 h-4 text-amber-400" />
-            <span>Wood Hearth Chalets</span>
+            <Waves className="w-4 h-4 text-amber-400" />
+            <span>Riverside Wood Chalets</span>
           </div>
           <div className="flex items-center justify-center gap-2">
             <Mountain className="w-4 h-4 text-amber-400" />
-            <span>UNESCO Park Treks</span>
+            <span>Pristine Trout Stream</span>
           </div>
           <div className="flex items-center justify-center gap-2">
             <Star className="w-4 h-4 text-amber-400" />
-            <span>Tirthan Trout Dining</span>
+            <span>Riverside Trout Dining</span>
           </div>
           <div className="flex items-center justify-center gap-2">
             <ShieldCheck className="w-4 h-4 text-amber-400" />
-            <span>Airport SUV Transfer</span>
+            <span>UNESCO Park Treks</span>
           </div>
         </div>
       </div>

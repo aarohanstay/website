@@ -38,9 +38,9 @@ export function AIConcierge() {
       } else if (queryLower.includes("food") || queryLower.includes("dining") || queryLower.includes("eat") || queryLower.includes("trout")) {
         aiReply = "Our Culinary Lounge offers authentic Himalayan Siddu with pure ghee, fresh pan-seared Tirthan River Trout, and evening campfire cocoa.";
       } else if (queryLower.includes("location") || queryLower.includes("map") || queryLower.includes("where")) {
-        aiReply = "We are located along the pristine Tirthan River in Gushaini, Kullu, Himachal Pradesh, near the Great Himalayan National Park entrance.";
+        aiReply = "We are located along the pristine Tirthan River in Badi Ropa, Kullu, Himachal Pradesh, near the Great Himalayan National Park entrance.";
       } else if (queryLower.includes("contact") || queryLower.includes("phone") || queryLower.includes("email")) {
-        aiReply = "You can call us directly at +91 91093 22140 or email stay@aarohan.com anytime.";
+        aiReply = "You can call us directly at +91 91093 22140 or email info@aarohanhospitality.com anytime.";
       }
 
       setMessages((prev) => [

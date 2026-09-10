@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { HOTEL_INFO } from "@/lib/hotel-data";
 import { MapPin, Phone, Mail, Sparkles, Navigation } from "lucide-react";
@@ -26,13 +27,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="space-y-4 md:col-span-1">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-slate-950 font-bold">
-                TA
-              </div>
-              <span className="text-base font-serif font-bold text-white tracking-wider">
-                {HOTEL_INFO.company}
-              </span>
+            <div className="flex items-center">
+              <Image
+                src="/branding/logo.svg"
+                alt={HOTEL_INFO.company}
+                width={260}
+                height={100}
+                style={{ width: "auto" }}
+                className="h-12 object-contain"
+              />
             </div>
             <p className="text-slate-400 text-xs font-light leading-relaxed">
               {HOTEL_INFO.tagline}

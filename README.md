@@ -62,7 +62,7 @@ NODE_TLS_REJECT_UNAUTHORIZED=0 npm run build
 1. Log in to your Hostinger hPanel ([hpanel.hostinger.com](https://hpanel.hostinger.com)).
 2. Go to **Websites** → Click **Manage** next to your domain.
 3. Open **Files** → **File Manager** → Navigate to your **subdomain folder** (e.g. `public_html/aarohan/`).
-4. Upload **ALL contents inside the `out/` folder** (`index.html`, `checkout.html`, `_next/`, `photos_videos/`, `favicon.ico`) directly into that subdomain folder.
+4. Upload **ALL contents inside the `out/` folder** (`index.html`, `checkout.html`, `_next/`, `branding/`, `slides/`, `real/`, `favicon.ico`) directly into that subdomain folder.
 
 ### Step 3: Configure `.htaccess` for Clean URL Routing
 Create or edit the **`.htaccess`** file inside your subdomain folder:

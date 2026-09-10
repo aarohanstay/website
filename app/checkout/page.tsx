@@ -31,13 +31,13 @@ function CheckoutContent() {
   const [selectedRoomId, setSelectedRoomId] = useState(roomIdParam);
   const room = ROOMS.find((r) => r.id === selectedRoomId) || ROOMS[0];
 
-  // Property & Waterfall Image Slideshow with unique image URLs
+  // Property Image Slideshow with unique image URLs
   const bookingImageSlides = [
     room.image, // 1st: Selected Room Interior
-    "/photos_videos/chhoie_waterfall.jpg", // 2nd: Chhoie Waterfall Tirthan Valley
-    "/photos_videos/photo_05.jpg", // 3rd: Alpine Haven Bedroom View
-    "/photos_videos/chhoie_waterfall_stream.jpg", // 4th: Chhoie Stream Cascade
-    "/photos_videos/photo_07.jpg", // 5th: Wooden Balcony Mountain Stream View
+    "/real/photo2.jpg",
+    "/real/photo3.jpg",
+    "/real/photo5.jpg",
+    "/real/photo6.jpg",
   ];
 
   // Interactive Check-In & Check-Out Dates
@@ -129,7 +129,7 @@ function CheckoutContent() {
     <div className="min-h-screen flex flex-col bg-[#090a0f] text-slate-100 selection:bg-amber-500 selection:text-slate-950">
       <Navbar />
 
-      <main className="flex-1 pt-28 pb-20 px-4 sm:px-6 lg:px-8">
+      <main className="flex-1 pt-36 sm:pt-44 pb-20 px-4 sm:px-6 lg:px-8">
         {/* SUCCESS PAGE VIEW */}
         {bookingConfirmed ? (
           <div className="max-w-3xl mx-auto my-12 ios-glass p-8 sm:p-12 rounded-3xl border border-amber-500/40 shadow-2xl space-y-8 animate-in fade-in zoom-in-95 duration-300">
@@ -221,8 +221,8 @@ function CheckoutContent() {
                 Guest Checkout & Reservation
               </h1>
               <div className="flex items-center gap-2 text-xs text-amber-400 font-semibold uppercase tracking-wider">
-                <Lock className="w-3.5 h-3.5" />
-                256-Bit SSL Encrypted Direct Booking
+                <Lock className="w-3.5 h-3.5 text-amber-400" />
+                <span>256-Bit SSL Encrypted Direct Booking</span>
               </div>
             </div>
 
@@ -295,7 +295,7 @@ function CheckoutContent() {
                       <div>
                         <MapPin className="w-4 h-4 text-amber-400 mx-auto mb-1" />
                         <span className="font-semibold text-white block">Tirthan River</span>
-                        <span className="text-[10px] text-slate-500">Gushaini, HP</span>
+                        <span className="text-[10px] text-slate-500">Badi Ropa, HP</span>
                       </div>
                     </div>
                   </div>

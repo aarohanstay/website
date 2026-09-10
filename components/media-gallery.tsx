@@ -86,7 +86,7 @@ export function MediaGallery() {
               ) : (
                 <div className="relative w-full h-full">
                   <Image
-                    src={item.poster || "/photos_videos/photo_01.jpg"}
+                    src={item.poster || "/real/photo1.jpg"}
                     alt={item.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"

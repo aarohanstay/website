@@ -13,13 +13,13 @@ export function PropertyMap() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-widest text-amber-400 font-semibold mb-2 block">
-            Himalayan Valley Location
+            Prime Riverside Location
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-tight mb-4">
             Find Us in Tirthan Valley
           </h2>
           <p className="text-slate-400 text-sm font-light">
-            Situated right on the riverbank in Gushaini, surrounded by pine forests and Great Himalayan National Park trails.
+            Situated right on the Tirthan riverbank in Badi Ropa, surrounded by pine forests, crystal trout streams, and Great Himalayan National Park trails.
           </p>
         </div>
 

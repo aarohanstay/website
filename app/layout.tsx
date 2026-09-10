@@ -29,8 +29,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Aarohan Hospitality | Luxury River Retreat Tirthan Valley",
-  description: "Elevating Himalayan Stay Experiences along Tirthan River, Gushaini, Himachal Pradesh. Book luxury wood chalets, trout dining & UNESCO park treks.",
+  title: "Aarohan Hospitality | Luxury Riverside Retreat Tirthan Valley",
+  description: "Elevating Himalayan riverfront stay experiences along the rushing Tirthan River, Badi Ropa. Book luxury wood chalets, private river balconies, trout dining & UNESCO park treks.",
 };
 
 export default function RootLayout({

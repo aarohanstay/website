@@ -24,7 +24,7 @@ export function FeaturedRooms() {
         <div className="text-center max-w-4xl mx-auto mb-14 flex flex-col items-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[10px] sm:text-xs tracking-[0.25em] uppercase font-semibold mb-4 backdrop-blur-md shadow-lg shadow-amber-500/10">
             <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping" />
-            <span>Exclusive Mountain Stays & Suites</span>
+            <span>Exclusive Riverside Stays & Suites</span>
           </div>
 
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif tracking-tight select-none">
@@ -32,7 +32,7 @@ export function FeaturedRooms() {
               Our Luxury
             </span>
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-slate-300 drop-shadow-[0_2px_12px_rgba(255,255,255,0.4)]">
-              Himalayan Accommodations
+              Riverside Accommodations
             </span>
           </h2>
 

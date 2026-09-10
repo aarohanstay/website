@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react";
 
 const AI_INSIGHTS = [
-  "Welcome to Aarohan Retreat, Tirthan Valley. Enjoy 25% OFF on Family Cedar Suite & Deluxe Alpine Haven with 24/7 AI Butler assistance.",
-  "Situated along the crystal-clear rushing waters of Tirthan River. Experience authentic wooden chalets, organic apple orchards & fresh trout dining.",
-  "Your AI Butler provides instant help for Great Himalayan National Park treks, Jalori Pass trips, bonfire arrangements & Kullu Airport SUV pickup.",
+  "Welcome to Aarohan Retreat — Tirthan Valley's premier luxury riverside sanctuary along the rushing waters of Tirthan River.",
+  "Wake up to soothing river soundscapes, private water-view balconies, organic apple orchards & fresh wood-grilled trout dining.",
+  "Enjoy 25% OFF on Family Cedar Suite & Deluxe Alpine Haven with 24/7 AI Butler assistance for river treks, bonfires & SUV pickups.",
 ];
 
 export function AITypingSubtitle() {

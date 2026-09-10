@@ -20,13 +20,13 @@ export function Amenities() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs uppercase tracking-widest text-amber-400 font-semibold mb-2 block flex items-center justify-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5" />
-              Elevated Mountain Living
+              Elevated Riverside Living
             </span>
             <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-tight mb-4">
               Curated Himalayan Experiences
             </h2>
             <p className="text-slate-400 text-sm font-light">
-              Immerse yourself in authentic alpine luxury — from pine wood hearth fires to private river trout dining.
+              Immerse yourself in authentic riverfront luxury — from pine wood hearth fires to private stream trout dining.
             </p>
           </div>
 
